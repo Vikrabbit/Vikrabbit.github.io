@@ -1,0 +1,662 @@
+ 
+/*styles.css */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 20px;
+    background: white;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    padding:20px
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: #a6b89d;
+    color: white;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    max-width: 200px;
+    margin-right:10px;
+}
+
+nav {
+    flex-grow: 1; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #efefef;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container {
+        position: relative; 
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        align-self: flex-end; 
+        margin-top: 10px; 
+        position: absolute;
+        right: 20px;
+    }
+
+    nav {
+        display: none; 
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+    }
+
+    nav.show {
+        display: block; 
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+}
+h1 span {
+    font-style: italic;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:1200px;
+    margin: 0 auto; 
+}
+
+.psy-title {
+    color : #164926;
+    font-weight: normal; 
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align:center;
+}
+
+.profile-pic {
+    flex: 1; 
+    max-width: 200px; 
+    height: auto; 
+}
+
+.rendezvous {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4E6C58; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia;
+    margin-top: 20px; 
+    font-size: 1.1em;
+}
+
+.rendezvous .calendrier-icon {
+    width: 45px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.rendezvous .text-rdv {
+    margin-right:5px;
+    text-decoration: none;
+}
+.rendezvous-link{
+    text-decoration: none;
+}
+.rendezvous:hover {
+    background-color: #445e4d; 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .profile-pic {
+        margin-left: 0; 
+        margin-top: 20px; 
+    }
+}
+
+.practice {
+    flex:1;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    color: #164926;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.practice .section-title{
+    margin-top: 0px;
+    margin-bottom:30px;
+}
+.separator {
+    border-top: 2px solid #adadad;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.practice-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom:20px;
+    gap: 40px; 
+
+}
+
+.text-block {
+    background: #4E6C58;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    color: white;
+}
+
+.etude{
+    padding:0 10px 0 10px;
+}
+
+.rpps{
+    padding: 0 10px 0 10px;
+}
+
+.quote-block {
+    font-style: italic;
+    color: #555;
+    width: 100%;
+    max-width: 600px;
+}
+
+.quote {
+    font-size: 1rem;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    
+    .text-block {
+        border-radius: 0px;
+    }
+    .practice-content {
+        flex-direction: column;
+        gap:0px
+    }
+
+    .quote {
+        padding : 10px;
+    }
+
+    .signature{
+        padding:10px;
+    }
+    }
+
+.contact-bar {
+    display : flex;
+    justify-content:space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    color:white;
+    font-size: 0.8rem;
+    background: #A6B89D;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap : 50px;
+}
+
+.contact-bar a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.contact-bar a:hover {
+    color: #ccc; 
+}
+
+.contact-bar .dot {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-bar {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .contact-bar a {
+        display: block; 
+    }
+
+    .contact-bar .dot {
+        display: inline; 
+        margin: 0 5px; 
+    }
+
+    .contact-info {
+        flex-direction: row; 
+        justify-content: center; 
+        gap : 10px;
+    }
+}
+    
+
+
+/*Ma pratique.html*/
+
+
+.section-title {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    color: #164926;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-titleh3 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+    color: #164926;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.approach,
+.issues {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    width:100%;
+
+}
+
+.approach p{
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+.issues-list ul{
+    text-align: left;   
+    list-style-type: disc;
+    padding-left: 25px;
+    color: white;
+    font-size: 0.9em;
+}
+.issues-list{
+    background-color: #4e6c58;
+    border-radius: 25px;
+
+}
+
+.group1{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.motscience{
+    text-decoration: underline;
+}
+/* Pour les écrans plus petits, affiche en ligne */
+@media (max-width: 768px) {
+    .approach,
+    .issues {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:0px;
+    }
+
+    .issues-list{
+        border-radius: 0px;
+    }
+    .approach p,
+    .issues-list ul {
+        margin: 5px 0;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .group1{
+        flex-direction: column;
+    }
+
+    .section-titleh3 {
+        text-align: center;
+    }
+}
+
+/*
+.audience ul {
+    color: white;
+}
+
+.formats h3,
+.audience h3 {
+    font-family: 'Great Vibes', cursive;
+    color: #164926;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+*/
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ /* gap: 20px;*/
+}
+
+.block {
+    background-color: #4e6c58;
+    /*/background-color: #d9e8d9;*/
+    border-radius: 25px;
+    padding: 0px 15px 15px 15px;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.block h4 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top : 10px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+.item p{
+    margin : 0px;
+    font-size: 0.9em;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: auto;
+    margin-top: 5px; /* Ajustez selon la taille de votre image */
+}
+
+.audience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.audience li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+/*Page consultations et tarifs*/
+.PriseRDV-section{
+    padding: 0px 15px 15px 15px;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    color:#164926;
+    
+}
+
+.section-title-consult-h3{
+    font-style: italic;
+    color:#164926;
+    text-align: center;
+    text-decoration: underline;
+}
+/* Page horaires */
+
+.Horaires{
+    text-align: center;
+    font-weight: bold;
+    color: #164926;
+}
+
+.Horaires ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+}
+
+.Horaires li {
+    margin-bottom: 10px; /* Ajustez la valeur selon vos besoins */
+    font-size: 1.4em;
+}
+
+.itemRDV{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.itemRDV p{
+    margin: 0px;
+    font-size: 0.9em;
+}
+
+h3{
+    padding-left: 30px;
+}
+
+.Horairetarif{
+    padding: 0px 15px 15px 15px;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    color:#164926;
+}
+
+.itemHoraireTarif{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.itemHoraireTarif p{
+    margin-top:7px;
+}
+.clock-icon{
+    width: 25px;
+    height: auto;
+    margin-top: 5px; /* Ajustez selon la taille de votre image */
+}
+
+.euro-icon{
+    width: 25px;
+    height: auto;
+    margin-top: 5px; /* Ajustez selon la taille de votre image */
+}
+
+/*Page FAQ*/
+.contentFAQ{
+    color:#164926;
+}
+
+.faq-section {
+    display:flex;
+    margin: 20px auto;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+    justify-content: center;
+    gap:10px;
+}
+
+.faq-section .section-title{
+    margin-top:0px;
+}
+
+.faq-question{
+    max-width: 820px;
+}
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.faq-image{
+    max-width: 370px;
+    height: auto;   
+}
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.faq-item h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.toggle-answer {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.faq-item{
+    cursor: pointer;
+}
+.answer {
+    display: none;
+    padding: 5px 5px 5px 30px;
+
+}
+.answer ul li {
+    margin: 5px auto;
+}
+
+@media (max-width: 768px) {
+    .faq-section{
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+}
