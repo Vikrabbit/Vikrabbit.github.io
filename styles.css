@@ -167,6 +167,8 @@ h1 span {
     flex: 1; 
     max-width: 200px; 
     height: auto; 
+    width: 100%;
+    object-fit: cover;
 }
 
 .rendezvous {
@@ -527,6 +529,10 @@ h1 span {
     color:#164926;
     text-align: center;
     text-decoration: underline;
+}
+
+.PriseRDV-section h3{
+    padding-left: 0px;
 }
 /* Page horaires */
 
