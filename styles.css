@@ -608,7 +608,7 @@ h3{
 .faq-section {
     display:flex;
     margin: 20px auto;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 20px;
     text-align: left;
     justify-content: center;
     gap:10px;
