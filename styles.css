@@ -263,6 +263,8 @@ h1 span {
 
 .rpps{
     padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .quote-block {
