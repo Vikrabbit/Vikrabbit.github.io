@@ -24,25 +24,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const answer = this.querySelector('.answer');
             const isOpen = answer.style.display === 'block';
 
-            // Close all other answers
             faqItems.forEach(otherItem => {
                 const otherAnswer = otherItem.querySelector('.answer');
                 if (otherAnswer !== answer) {
                     otherAnswer.style.display = 'none';
                     const toggleIcon = otherItem.querySelector('.toggle-answer');
-                    toggleIcon.src = 'up-arrow.png'; // Assurez-vous que c'est le chemin correct
+                    toggleIcon.src = 'up-arrow.png'; 
                 }
             });
 
-            // Toggle the current answer
             if (isOpen) {
                 answer.style.display = 'none';
                 const toggleIcon = this.querySelector('.toggle-answer');
-                toggleIcon.src = 'up-arrow.png'; // Assurez-vous que c'est le chemin correct
+                toggleIcon.src = 'up-arrow.png'; 
             } else {
                 answer.style.display = 'block';
                 const toggleIcon = this.querySelector('.toggle-answer');
-                toggleIcon.src = 'down-arrow.png'; // Assurez-vous que c'est le chemin correct
+                toggleIcon.src = 'down-arrow.png'; 
             }
         });
     });
