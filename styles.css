@@ -315,6 +315,7 @@ h1 span {
     padding: 10px 0;
 }
 
+
 .contact-info {
     display: flex;
     align-items: center;
@@ -652,3 +653,39 @@ h3{
         align-items:center;
     }
 }
+
+.legal-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: georgia;
+  color:#555;
+}
+
+.legal-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #164926;
+}
+
+.legal-container h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #164926;
+}
+
+.legal-links {
+    text-align: right;
+    font-size: 0.7em;
+    padding: 10px 0 0 0;
+    margin-right: 8px;
+  }
+  
+  .legal-links a {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .legal-links a:hover {
+    color: #555;
+  }
